@@ -1,0 +1,205 @@
+# Page settings
+
+baseURL = "http://example.org/"
+languageCode = "en"
+title = "CV - Jesu Kiran Spurgen"
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+
+
+
+
+
+[params]
+    author = "jesukiranspurgen"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+
+
+
+    [params.profile]
+        enable = true
+        name = "Jesu Kiran Spurgen"
+        tagline = "Keywords: Image Analysis, Computer Vision, Machine Learning"
+        avatar = "avatar.png"
+
+
+
+
+
+
+
+    [params.contact]
+        enable = true
+        location = "Aalst, Belgium"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "(+32) 472 71 01 39"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "jesukiran@protonmail.com"
+        #[[params.contact.list]]
+        #icon = "fas fa-globe"
+        #url = "#"
+        #text = "www.yourwebsite.com"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Programming Languages"
+        [[params.skills.list.items]]
+        details = "Python (Advanced)"
+        [[params.skills.list.items]]
+        details = "C++ (Intermediate)"
+        [[params.skills.list.items]]
+        details = "R (Basic)"
+        [[params.skills.list.items]]
+        details = "MATLAB (Basic)"
+        [[params.skills.list]]
+        title = "Python Modules"
+        [[params.skills.list.items]]
+        details = "Numpy, Matplotlib, Plotly, Pandas, ggplot, seaborn"
+        [[params.skills.list.items]]
+        details = "OpenCV, TensorFlow, Keras, SciPy, scikit-image, wxpython, Sphinx"
+
+        [[params.skills.list]]
+        title = "Imaging Tools"
+        [[params.skills.list.items]]
+        details = "FFMPEG, FSL, Fiji (ImageJ), ScanIP (Simpleware)"
+
+
+        [[params.skills.list]]
+        title = "Other Tools"
+        [[params.skills.list.items]]
+        details = "Git, Anaconda (Virtual Environments, Jupyter Notebook)"
+        [[params.skills.list.items]]
+        details = "Pycharm (IDE), KLayout, Atom, Notepad++, LaTeX"
+
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Postgraduate Studies in Advanced Medical Imaging"
+        university = "Katholieke Universiteit Leuven, Belgium"
+        dates = "2015 - 2016  "
+        [[params.education.list]]
+        degree = "M.Sc., Medical Systems Engineering"
+        university = "Otto-von-Guericke-Universität Magdeburg, Germany"
+        dates = "2012 - 2014"
+        [[params.education.list]]
+        degree = "B.E., Electronics and Communication Engineering"
+        university = "Karunya Institute of Technology and Sciences, Coimbatore, India"
+        dates = "2006 - 2010"
+
+
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Business Fluent"
+        [[params.languages.list]]
+        name = "German"
+        level = "B1 level"
+        [[params.languages.list]]
+        name = "Dutch"
+        level = "B1 level"
+        [[params.languages.list]]
+        name = "Hindi"
+        level = "Fluent"
+        [[params.languages.list]]
+        name = "Tamil"
+        level = "Mother Tongue"
+
+
+    [params.summary]
+        enable = true
+        text = "I am an image analysis, computer vision and machine learning engineer with an academic background in medical image analysis. I started my career in image analysis at Digital Orthopaedics, followed by a computer vision project for the Microfluidics team at Imec and currently finishing a machine learning project for the Picture Quality team at TP Vision. My areas of expertise and interest are analyzing large amounts of images, videos and text files, creating automated image analysis pipelines, rapid prototyping of proof-of-concepts (POCs) using open-source software and training neural networks to perform well. As a versatile consultant, I have been able to work across research and technical teams to bring reproducible, workable and implementable solutions to diverse problems. I enjoy challenges, working on new ideas and perspectives, I am easy to work with and have a strong ability to adapt."
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Machine Learning Engineer"
+        dates = "Jul 2019 - May 2020"
+        company = "TMC, Zaventem for TP Vision, Gent"
+        details = "Picture quality (PQ) is the key deciding factor for consumers while buying a TV. With every new model, the goal is to create a final picture which is more realistic, more natural and which increasingly mirrors real life. In this project, the aim is to classify content based on three major classes (‘Face’, ‘Landscape/Nature’ and ‘Other content (which is neither a face nor landscape)’. A neural network has been trained and the implementation will be available in the latest Philips OLEDs – (the 805 and 855) which is expected to be released towards the end of 2020. Content classification will help create a seamless blend between the five key pillars of PQ – Source, Colour, Contrast, Motion and Sharpness."
+        [[params.experience.list.items]]
+        details = "Acquire data and create a POC (proof of concept using TensorFlow + Keras) to study the feasibility of implementing scene classification system for TV monitors."
+        [[params.experience.list.items]]
+        details = "Classify scenes (as faces, scenery or as neither) robustly using a neural network topology which consist of an input layer, 2 hidden layers and an output layer in C++."
+        [[params.experience.list.items]]
+        details = "Perform hyperparametric tuning of the neural network for better predictions."
+
+        [[params.experience.list]]
+        title = "Imaging Vision Software Engineer"
+        dates = "Feb 2018-Jun 2019"
+        company = "Qplox Engineering, Leuven for Imec, Leuven, Belgium"
+        details = "In Microfluidics, Timing Channels are small tubular structures through which liquids (blood) can have a ceaseless and effortless flow. Liquids flowing through an ideal timing channel would traverse without leaving behind bubbles and will not wick. Also, ideally speaking, the inside of the channel will be clean, and droplets would not stick to the walls of the channel. In order to evaluate the cleaning in the channels, the contact angle of the fluid meniscus is calculated from the distance travelled by the fluid in the channel and the velocity of flow. These contact angle values and the nature of the plot for the whole length of the channel is interesting for interpretation and decision making! After acquisition of data from a high-speed camera, the aim is to analyze and make quick conclusions."
+        [[params.experience.list.items]]
+        details = "Interfaced with the system designers, lab scientists and technicians to learn about wafer design limitations, microscopy illumination constraints and implemented image analysis algorithms taking into account the practical limitations."
+        [[params.experience.list.items]]
+        details = "Developed software pipeline for the analysis of videos and images (from Xenics cameras) of microfluidics devices and automated the image analysis part for testing protocols."
+        [[params.experience.list.items]]
+        details = "Created a software tool with GUI for use by lab technicians and researchers to process infrared videos/images and provided documentation/user manual for scripts/testing."
+
+        [[params.experience.list]]
+        title = "Medical Image Analyst"
+        dates = "Sep 2016-Jan 2018"
+        company = "Digital Orthopaedics, Mont-Saint-Guibert, Belgium"
+        details = "The foot and ankle form a specific entity from the anatomical and clinical point of view, because of its biomechanical complexity and its central role in an essential human activity: locomotion. Unfortunately, clinicians do not have all the necessary support to analyze a pathology and to assess the potential success of a given therapy. Digital Orthopaedics is developing a unique solution to create biomechanical simulations of the foot and ankle which will help clinicians with its clinical decision support software for the foot and ankle."
+        [[params.experience.list.items]]
+        details = "Setup the image segmentation pipeline using ScanIP Simpleware software (from Synopsys)."
+        [[params.experience.list.items]]
+        details = "Segmented images coming from CT or MR, extract geometric data of relevant anatomic structures, and created surface and volume meshes (using Finite-Element Modelling)."
+        [[params.experience.list.items]]
+        details = "Developed software for podiatric measurements (angle between metatarsals, geometric progression of phalanges) from X-ray images."
+
+        [[params.experience.list]]
+        title = "Graduate Research Assistant"
+        dates = "Aug 2014-Nov 2014"
+        company = "Fraunhofer MeVis, Bremen, Germany"
+        [[params.experience.list.items]]
+        details = "Setup the post processing and analysis workflow to evaluate MR data characterizing brain perfusion with means of Arterial Spin Labeling (ASL) (using python scripting)."
+        [[params.experience.list.items]]
+        details = "Implemented (perfusion models in MeVisLab) and validated (with FSL)."
+
+
+        [[params.experience.list]]
+        title = "Graduate Student Assistant"
+        dates = "Nov 2012-Sep 2013"
+        company = "Leibniz Institute for Neurobiology, Magdeburg, Germany"
+        details = "Programmed a data acquisition card (NI PCI-6733) to generate impulses used for electrical stimulation of laboratory rats."
+
+        [[params.experience.list]]
+        title = "Assistant Systems Engineer"
+        dates = "Dec 2010-Mar 2012"
+        company = "Tata Consultancy Services, Chennai, India"
+        details = "Maintained the mainframe Client databases(using COBOL) by running fixing errors, and created test-cases for testing purposes."
+
+
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/jesukiranspurgen"
+        title = "jesukiranspurgen"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/jesu-k-84174978"
+        title = "Jesu Kiran Spurgen"
